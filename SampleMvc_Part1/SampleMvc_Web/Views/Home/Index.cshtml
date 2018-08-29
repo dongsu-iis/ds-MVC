@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>ASP.NET MVC Sample - 階層化アーキテクチャ - </h1>
+    <p class="lead">ASP.NET MVC について参考にしたい場合、下記のホームページをお尋ねください。</p>
+    <p><a href="https://man-of-virtue.com/category/it/aspnet/" class="btn btn-primary btn-lg">Man Of Virtue</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Categotry</h2>
+        <p>
+            Northwind - Category <br />
+            Index(List), Details, Create, Edit, Delete.
+        </p>
+        <p><a class="btn btn-default" href="@Url.Action("Index","Category")">Category &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Product</h2>
+        <p>
+            Northwind - Product <br />
+            Index(List), Details, Create, Edit, Delete.
+        </p>
+        <p><a class="btn btn-default" href="@Url.Action("Index","Product")">Product &raquo;</a></p>
+    </div>
+</div>
