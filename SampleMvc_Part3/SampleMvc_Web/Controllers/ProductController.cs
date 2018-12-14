@@ -14,7 +14,8 @@ namespace SampleMvc_Web.Controllers
         private IProductRepository _productRepository;
         private ICategoryRepository _categoryRepository;
 
-        public IEnumerable<Category> Categories {
+        public IEnumerable<Category> Categories
+        {
             get
             {
                 return _categoryRepository.GetAll();

@@ -1,8 +1,6 @@
-﻿using System;
+﻿using SampleMvc_Web.Models.Interface;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
-using SampleMvc_Web.Models.Interface;
 
 namespace SampleMvc_Web.Models.Repository
 {
@@ -18,6 +16,6 @@ namespace SampleMvc_Web.Models.Repository
             return this.GetAll().Where(x => x.CategoryID == categoryID);
         }
 
-       
+
     }
 }
